@@ -1,0 +1,17 @@
+[database]
+type = "sqlite"  # or "postgres"
+uri = "config_snapshot.db"  # For SQLite: "config_snapshot.db", For Postgres: "postgresql://user:pass@localhost/dbname"
+
+[compression]
+algorithm = "zlib"
+level = 9
+
+[gather]
+# Directories to look for config files
+xdg_config_home = ""
+xdg_config_dirs = ""
+system_config_dir = "/etc"
+
+[logging]
+level = "info"
+format = "text"
